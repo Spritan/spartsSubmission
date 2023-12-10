@@ -1,8 +1,9 @@
 @import "../../style/colors.scss";
 
 .MNavbar {
-  bottom: 0;
-  position: sticky;
+  bottom: 0em;
+  position: fixed;
+  width: 100%;
   .bar {
     height: 70px;
     background: $sidebar-bg-color;
