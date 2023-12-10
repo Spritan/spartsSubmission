@@ -1,22 +1,32 @@
+@import "../../style/colors.scss";
 .topBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $theme-color-lighter;
 
   .frontHalf {
-    padding: 0 1em;
+    padding: 0 4.5em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     .logo_n_date {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: start;
       img {
-        width: 75%;
+
+        width: 70%;
       }
       p {
+        padding: 0;
+        margin: 0;
         text-align: center;
         font-size: 1em;
       }
@@ -38,7 +48,7 @@
       }
     }
     .Welcome {
-      padding: 0 1em;
+      padding: 1em 3em;
       display: block;
       .heading {
         font-size: 2.5em;
@@ -46,11 +56,15 @@
       .bdy {
         font-size: 1em;
       }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 944px) {
         display: none;
       }
+    } 
+    @media screen and (max-width: 1306px) {
+      padding: 0 1em;
     }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 944px) {
+ 
       width: 100%;
       justify-content: space-around;
     }
@@ -88,6 +102,12 @@
         }
       }
     }
+    .spacer{
+      width: 5em;
+      @media screen and (max-width: 1242px) {
+        display: none;
+      }
+    }
     .user {
       display: flex;
       flex-direction: row;
@@ -105,6 +125,9 @@
         }
         @media screen and (max-width: 900px) {
           width: 4.5em;
+          img{
+            width: 60px;
+          }
         }
       }
       .user_details {

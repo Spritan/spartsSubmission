@@ -1,0 +1,83 @@
+@import "../../style/colors.scss";
+
+.MNavbar {
+  bottom: 0;
+  position: sticky;
+  .bar {
+    height: 70px;
+    background: $sidebar-bg-color;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 15px;
+  }
+
+  .els-wrap {
+    display: flex;
+    align-items: center;
+    width: 33px;
+    background-size: 1200px;
+    background-position: 100% 50%;
+    color: $sidebar-font-color;
+    background-color: $sidebar-bg-color;
+    padding: 0 9px;
+    border-radius: 100px;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    transition: width 200ms, padding 200ms, border-radius 300ms,
+      background-position 900ms;
+    transition-timing-function: ease-in-out;
+  }
+  .els-wrap:hover {
+    background-position: 0 50%;
+    padding: 3px 13px;
+    border-radius: 50px;
+  }
+  .els-wrap:hover .icon {
+    font-size: 27px;
+    margin-right: 10px;
+  }
+  .els-wrap:hover .label {
+    opacity: 1;
+  }
+  .els-wrap:focus {
+    background-position: 0 50%;
+    padding: 3px 13px;
+    border-radius: 50px;
+  }
+  .els-wrap:focus .icon {
+    font-size: 27px;
+    margin-right: 10px;
+  }
+  .els-wrap:focus .label {
+    opacity: 1;
+  }
+  .els-wrap .icon {
+    font-size: 33px;
+    margin-right: 25px;
+    position: relative;
+    z-index: 2;
+    transition: font-size 250ms, margin-right 200ms;
+    transition-timing-function: ease-out;
+  }
+  .els-wrap .label {
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    font-size: 11px;
+    transition: opacity 400ms;
+    transition-delay: 130ms;
+    transition-timing-function: ease-out;
+  }
+
+  
+
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}

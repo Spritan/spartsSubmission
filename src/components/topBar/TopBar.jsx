@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import Logo from "../../assets/images/SpartsLogo.png";
-import User_img from "../../assets/images/user.jpg";
 
-import "./topBar.scss";
 import { NotificationImportantOutlined, SettingsOutlined } from "@mui/icons-material";
+
+import User_img from "../../assets/images/user.jpg";
+import Logo from "../../assets/images/SpartsLogo.png";
+import "./topBar.scss";
 
 const TopBar = () => {
   const [day, setDay] = useState("--");
@@ -77,6 +78,9 @@ const TopBar = () => {
           <div className="_btn">
             <SettingsOutlined sx={{ fontSize: 40 }} />
           </div>
+        </div>
+        <div className="spacer">
+
         </div>
         <div className="user">
           <div className="user_pic">

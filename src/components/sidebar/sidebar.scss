@@ -1,0 +1,106 @@
+@import "../../style/colors.scss";
+
+.CompanySidebar {
+  .Sidebar_ {
+    display: flex;
+
+    main {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    }
+    .Sidebar {
+      display: block;
+      height: 90vh;
+      width: 280px;
+      padding: 0;
+      margin: 0;
+      background-color: $sidebar-bg-color;
+      color: $sidebar-font-color;
+      transition: all 0.5s;
+      overflow-wrap: normal;
+      position: sticky;
+      top: 10vh;
+      // overflow-y: auto;
+
+      .top_section {
+        padding-top: 0.7em;
+      }
+      .heading {
+        padding: 0 0.5em;
+        padding-bottom: 0.5em;
+      }
+      .menus {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .SidebarList {
+        width: 100%;
+        padding: 2em 0;
+        margin: 0;
+        .top_section {
+          .bars {
+            display: flex;
+            font-size: 25px;
+            margin-left: 50px;
+          }
+        }
+        .row {
+          padding: 0.7em 0;
+          display: flex;
+          flex-direction: row;
+          font-size: 1.2em;
+          font-weight: 530;
+          text-decoration: none;
+          color: $sidebar-font-color;
+          div {
+            display: flex;
+            padding: 0 1em;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .active {
+          font-weight: 800;
+          color: #AECBFA;
+        }
+        .row:hover {
+          margin: 0 0.1em;
+          background-color: $theme-color-deep-hover;
+        }
+
+        .searchBar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $theme-color-deep;
+          background-color: $theme-color-lighter;
+          border-radius: 5px;
+          margin: 1.3em 0.7em;
+          padding: 0.5em 0;
+
+          border-radius: 2em;
+
+          &:focus-within {
+            border-color: #007bff;
+          }
+          .searchIcon {
+            margin: 0 1em;
+            margin-right: 0.2em;
+          }
+          .searchInput {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 0.9em;
+            background-color: transparent;
+          }
+        }
+      }
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "active_student": 5000,
+  "active_coachers": 5,
+  "amounts": [
+    {
+      "label": "AMOUNT RECEIVED",
+      "color": "#495A62",
+      "amount": 624000,
+      "student": 400
+    },
+    {
+      "label": "AMOUNT PENDING",
+      "color": "#EC7571",
+      "amount": 334000,
+      "student": 123
+    }
+  ],
+  "labels": [
+    "Jun'23",
+    "Jul'23",
+    "Aug'23"
+  ],
+  "categories": [
+    "All",
+    "Classes",
+    "Meetings",
+    "Events"
+  ],
+  "schedule": [
+    {
+      "name": "Beginers Badminton Class",
+      "category": "Classes",
+      "date": "Fri 01 Sep",
+      "time": "3:00 PM - 4:00 PM",
+      "tag": ""
+    },
+    {
+      "name": "Intermediate Badminton Class",
+      "category": "Classes",
+      "date": "Fri 01 Sep",
+      "time": "6:00 PM - 7:30 PM",
+      "tag": "Fitness Test"
+    },
+    {
+      "name": "Staff Meeting",
+      "category": "Meetings",
+      "date": "Fri 02 Sep",
+      "time": "6:00 PM - 7:30 PM",
+      "tag": ""
+    },
+    {
+      "name": "Yoga Competition @academy",
+      "category": "Events",
+      "date": "Fri 02 Sep",
+      "time": "4:00 PM - 5:00 PM",
+      "tag": ""
+    },
+    {
+      "name": "Swimming Competition",
+      "category": "Events",
+      "date": "Sat 02 Sep",
+      "time": "4:00 PM - 6:00 PM",
+      "tag": ""
+    },
+    {
+      "name": "Intermediate Badminton Class",
+      "category": "Classes",
+      "date": "Fri 01 Sep",
+      "time": "6:00 PM - 7:30 PM",
+      "tag": "Fitness Test"
+    },
+    {
+      "name": "Staff Meeting",
+      "category": "Meetings",
+      "date": "Fri 02 Sep",
+      "time": "6:00 PM - 7:30 PM",
+      "tag": ""
+    },
+    {
+      "name": "Yoga Competition @academy",
+      "category": "Events",
+      "date": "Fri 02 Sep",
+      "time": "4:00 PM - 5:00 PM",
+      "tag": ""
+    },
+    {
+      "name": "Swimming Competition",
+      "category": "Events",
+      "date": "Sat 02 Sep",
+      "time": "4:00 PM - 6:00 PM",
+      "tag": ""
+    }
+  ],
+  "datasets1": [
+    {
+      "label": "FEE RECEIVED",
+      "data": [
+        10,
+        20,
+        30
+      ],
+      "backgroundColor": "#495A62"
+    }
+  ],
+  "datasets2": [
+    {
+      "label": "ACTIVE STUDENTS",
+      "data": [
+        10,
+        20,
+        30
+      ],
+      "backgroundColor": "#6E7B83"
+    }
+  ]
+}

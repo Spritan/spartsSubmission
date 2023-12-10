@@ -1,0 +1,40 @@
+@import "../../style/colors.scss";
+
+.Dropdown {
+  position: relative;
+  width: 11rem;
+  .dropdown-header {
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    padding-left: 1.3em;
+    border: 1px solid $primary-border-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.open {
+      border-bottom: none;
+    }
+    .custom-down-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 99%;
+    background-color: $theme-color-lightest;
+    border: 1px solid $primary-border-color;
+    border-top: none;
+    .option {
+      padding: 10px;
+      padding-left: 1.3em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
