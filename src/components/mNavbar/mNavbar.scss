@@ -13,6 +13,11 @@
     flex-direction: row;
     padding: 0 15px;
   }
+  .active {
+    font-weight: 800;
+    font-size: larger;
+    color: #AECBFA;
+  }
 
   .els-wrap {
     display: flex;
@@ -75,7 +80,10 @@
     transition-timing-function: ease-out;
   }
 
-  
+  .active {
+    font-weight: 800;
+    color: #AECBFA;
+  }  
 
   @media screen and (min-width: 500px) {
     display: none;
