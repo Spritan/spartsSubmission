@@ -59,6 +59,7 @@
       @media screen and (max-width: 944px) {
         display: none;
       }
+      
     } 
     @media screen and (max-width: 1306px) {
       padding: 0 1em;
@@ -144,5 +145,8 @@
         }
       }
     }
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
