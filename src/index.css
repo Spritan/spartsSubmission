@@ -4,4 +4,8 @@
 html *
 {
    font-family: Arial !important;
+   overflow-x: hidden;
 }
+/* ::-webkit-scrollbar {
+  display: none;
+} */
